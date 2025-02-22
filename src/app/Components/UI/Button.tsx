@@ -1,5 +1,38 @@
-import React from "react";
+import Link from "next/link";
+import React, { FC } from "react";
 
-export  const Button: React.FC<{message:string}> = ({ message }) => { return(
-    <h1>{message}</h1>
-)}
+interface Button {
+  className?: string;
+  content: string;
+  href?: string;
+  Icon?: any;
+  type?: "button" | "submit" | "reset";
+  onClick?: (
+    event:
+      | React.MouseEvent<HTMLButtonElement>
+      | React.MouseEvent<HTMLAnchorElement>
+  ) => void;
+}
+
+export const Button: FC<Button> = ({
+  content,
+  href = "",
+  Icon,
+  type,
+  className,
+  onClick,
+}) => {
+  if (href) {
+    return (
+      <Link href={href} className={className} onClick={onClick}>
+        {Icon && <Icon />} {content}
+      </Link>
+    );
+  }
+
+  return (
+    <button type={type} className={className} onClick={onClick}>
+      {Icon && <Icon />} {content}
+    </button>
+  );
+};
