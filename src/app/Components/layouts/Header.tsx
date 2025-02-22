@@ -4,10 +4,8 @@ import Link from "next/link";
 import { FC } from "react";
 import { Button } from "../ui/Button";
 import { User } from "lucide-react";
-interface Header {
-  announcement?: string;
-}
-export const Header: FC<Header> = ({ announcement }) => {
+
+export const Header: FC = () => {
   return (
     <header className="w-full flex justify-between items-center px-9 h-16">
       <Image

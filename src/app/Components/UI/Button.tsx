@@ -1,3 +1,4 @@
+import { LucideIcon } from "lucide-react";
 import Link from "next/link";
 import React, { FC } from "react";
 
@@ -5,7 +6,7 @@ interface Button {
   className?: string;
   content: string;
   href?: string;
-  Icon?: any;
+  Icon?: LucideIcon;
   type?: "button" | "submit" | "reset";
   onClick?: (
     event:
