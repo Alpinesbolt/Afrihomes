@@ -16,15 +16,14 @@ export const TabPanel: FC<Tab> = ({
   activeTab,
 }) => {
   return (
-    <div className="tabs-panel">
+    <div className="flex-center">
       {content.map((c, index, arr) => (
         <Button
           key={c}
           content={c}
           onClick={() => setActiveTab(c)}
-          activeTab={c}
           className={clsx(
-            "btn btn-secondary border rounded-none capitalize",
+            "m-0 btn btn-secondary border rounded-none capitalize transition-colors duration-300 ease-linear border-b-0",
             activeTab === c
               ? "bg-primary/20 !border-l-1 border-primary text-primary  rounded-none rounded-tl-lg "
               : "border-subtle-text",

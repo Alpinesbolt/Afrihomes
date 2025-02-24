@@ -15,6 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <p className="w-full bg-anounceTag text-white text-center">
+          {"Announcement placeholder"}
+        </p>
         <Header />
         {children}
       </body>

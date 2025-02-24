@@ -11,13 +11,13 @@ export const SearchFeature: FC = () => {
     setActiveTab(tab);
   };
   return (
-    <div className="flex flex-col justify-start items-start p-3">
+    <div className="flex flex-col justify-start items-start p-3 gap-0 *:m-0">
       <TabPanel
         content={searchTabs}
         setActiveTab={handleTabClick}
         activeTab={activeTab}
       />
-      <div className="flex justify-center items-center gap-4 h-20">
+      <div className="flex-center gap-4 h-20 w-full">
         <form className="grid grid-cols-[150px_150px_150px_100px] gap-4 border border-subtle-text rounded-lg rounded-tl-none w-full p-4">
           <select className="bg-white border border-subtle-text p-3 rounded-lg text-primary">
             <option>Location</option>
