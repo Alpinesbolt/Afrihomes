@@ -26,14 +26,14 @@ export const Button: FC<Button> = ({
   if (href) {
     return (
       <Link href={href} className={className} onClick={onClick}>
-        {Icon && <Icon />} {content}
+        {Icon && <Icon size={16} />} {content}
       </Link>
     );
   }
 
   return (
     <button type={type} className={className} onClick={onClick}>
-      {Icon && <Icon />} {content}
+      {Icon && <Icon size={16} />} {content}
     </button>
   );
 };

@@ -18,7 +18,7 @@ export const SearchFeature: FC = () => {
         activeTab={activeTab}
       />
       <div className="flex-center gap-4 h-20 w-full">
-        <form className="grid grid-cols-[150px_150px_150px_100px] gap-4 border border-subtle-text rounded-lg rounded-tl-none w-full p-4">
+        <form className="grid grid-cols-4 gap-4 border border-subtle-text rounded-lg rounded-tl-none w-full p-4">
           <select className="bg-white border border-subtle-text p-3 rounded-lg text-primary">
             <option>Location</option>
             <option value="abuja">abuja</option>
@@ -35,10 +35,10 @@ export const SearchFeature: FC = () => {
             type="submit"
             content="Search"
             Icon={Search}
-            className="btn btn-primary"
+            className="btn btn-primary flex-center"
           />
         </form>
-        <div className="h-full w-60 bg-gradient-to-tr from-accent4 to-primary rounded-lg" />
+        <div className="h-full w-96 bg-gradient-to-tr from-accent4 to-primary rounded-lg" />
       </div>
     </div>
   );

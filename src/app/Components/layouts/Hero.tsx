@@ -4,7 +4,7 @@ import { SquareArrowOutUpRight, Target } from "lucide-react";
 import Image from "next/image";
 export const Hero: FC = () => {
   return (
-    <section className="grid grid-cols-2 items-center place-items-center py-10">
+    <section className="grid grid-cols-2 place-items-center py-10">
       <div className="flex flex-col gap-6 items-start w-8/12">
         <h1 className="text-3xl font-bold capitalize">
           Homes & Lands At Your Preferred Choices

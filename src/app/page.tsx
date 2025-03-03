@@ -1,13 +1,15 @@
 import { Hero } from "./Components/layouts/Hero";
 import { SearchFeature } from "./Components/layouts/Search";
-import { HeroT } from "./Components/layouts/HeroT";
+import { FeaturedProducts } from "./Components/layouts/Featured";
+import { Testimonials } from "./Components/layouts/Testimonials";
 
 export default function Home() {
   return (
     <main className="w-full px-9 mx-auto">
       <Hero />
       <SearchFeature />
-      <HeroT/>
+      <FeaturedProducts />
+      <Testimonials />
     </main>
   );
 }
