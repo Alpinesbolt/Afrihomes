@@ -11,7 +11,7 @@ export const SearchFeature: FC = () => {
     setActiveTab(tab);
   };
   return (
-    <div className="flex flex-col justify-start items-start p-3 gap-0 *:m-0">
+    <div className="flex flex-col justify-start items-start p-3 px-9 gap-0 *:m-0">
       <TabPanel
         content={searchTabs}
         setActiveTab={handleTabClick}
@@ -38,7 +38,7 @@ export const SearchFeature: FC = () => {
             className="btn btn-primary flex-center"
           />
         </form>
-        <div className="h-full w-96 bg-gradient-to-tr from-accent4 to-primary rounded-lg" />
+        <div className="h-full w-96 gradient-1" />
       </div>
     </div>
   );

@@ -19,6 +19,8 @@ export default {
         anounceTag: "#434147",
         text: "#1C1A1F",
         "button/fillpressed": "#EBE1ED",
+        "button/pressed": "#4D1F57",
+        "button/hover":"#B664C7",
         "subtle-text": "#929095",
         "subtle-body-text": "#A9A9A9",
       },

@@ -1,8 +1,7 @@
 import { Quote } from "lucide-react";
 import Image from "next/image";
-import { FC } from "react";
 
-export const Testimonials: FC = () => {
+export const AdminTestimony= () => {
   return (
     <section className="grid grid-cols-2 items-center place-items-center py-6 gap-6">
       <div className="relative h-[500px] w-[500px] bg-subtle-text rounded-tr-3xl rounded-bl-3xl">

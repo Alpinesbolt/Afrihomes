@@ -1,41 +1,35 @@
 import React, { FC } from "react";
 import Image from "next/image";
   
-  interface ProductCard {
-    cont1: string;
-    address: string;
-    room: string;
+  interface ClientReviewCard {
+    review: string;
+    name: string;
+    property: string;
     src: string;
-    imgName: string;
   }
   
-  export const ClientCard: FC<ProductCard> = ({
-    cont1,
-    address,
-    room,
+  export const ClientCard: FC<ClientReviewCard> = ({
+    review,
+    name,
+    property,
     src,
-    imgName,
   }) => {
     return (
-      <div className="border border-accent3 border-[6px] rounded-2xl relative h-96 w-80 pt-9 pb-9 pr-4 pl-4">
-        <div className="mb-16">
-            <p>{cont1}</p>
-        </div>
-        <div className="mt-16 mb-4 absolute bottom-0 h-12">
-            <div className="flex fiex-col align-center">
+      <div className="relative border border-tertiary rounded-2xl h-80 w-64 py-4 px-3">
+            <p className="body-text-2">{review}</p>
+        <div className="absolute bottom-0 pb-4 flex gap-3">
             <Image
-                alt={imgName}
+                alt={name}
                 src={src}
                 width={50}
                 height={50}
                 
             />
-            <div className="ml-4">
-                <p>{address}</p>
-                <p className="text-primary">{room}</p>
+            <div>
+                <p className="body-text-2 font-medium">{name}</p>
+                <p className="text-button/pressed body-text-3">{property}</p>
             </div>
             
-            </div>
         </div>
         
       </div>

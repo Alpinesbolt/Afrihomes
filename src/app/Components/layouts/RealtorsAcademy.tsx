@@ -11,7 +11,7 @@ import { ProductCard } from "../ui/ProductCard";
 
 
 
-export const Experience: FC = () => {
+export const RealtorsAcademy= () => {
   return (
     <section className="grid grid-cols-4 gap-8 items-center place-items-center p-8">
   <div className="col-span-4 lg:col-span-2">
