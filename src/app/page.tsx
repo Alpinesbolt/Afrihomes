@@ -6,7 +6,7 @@ import { RealtorsAcademy } from "./Components/layouts/RealtorsAcademy";
 import { ClientsTestimony } from "./Components/layouts/ClientsTestimony";
 import { HomeCTA } from "./Components/layouts/HomeCTA";
 import { NewsLetter } from "./Components/layouts/NewsLetter";
-import { Footer } from "./Components/layouts/Footer";
+
 
 export default function Home() {
   return (
@@ -19,7 +19,6 @@ export default function Home() {
       <ClientsTestimony/>
       <HomeCTA/>
       <NewsLetter/>
-      <Footer/>
     </main>
   );
 }

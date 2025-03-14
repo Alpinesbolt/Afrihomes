@@ -1,0 +1,37 @@
+{
+    "Lagos": [
+        "Ikeja",
+        "Surulere",
+        "Epe",
+        "Badagry",
+        "Lekki"
+    ],
+    "Ogun": [
+        "Abeokuta South",
+        "Abeokuta North",
+        "Ijebu Ode",
+        "Sagamu",
+        "Yewa"
+    ],
+    "California": [
+        "Los Angeles",
+        "San Francisco",
+        "San Diego",
+        "Sacramento",
+        "Fresno"
+    ],
+    "Texas": [
+        "Houston",
+        "Dallas",
+        "Austin",
+        "San Antonio",
+        "El Paso"
+    ],
+    "Maharashtra": [
+        "Mumbai",
+        "Pune",
+        "Nagpur",
+        "Nashik",
+        "Aurangabad"
+    ]
+}

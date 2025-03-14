@@ -51,7 +51,7 @@ export const ProductCard: FC<ProductCard> = ({
         <small className="text-subtle-text truncate align-middle">
           <MapPin size={16} className="inline-block text" /> {address}
         </small>
-        <p className="text-secondary">{price}</p>
+        <p className="text-secondary">₦ {price}</p>
       </div>
     </div>
   );
